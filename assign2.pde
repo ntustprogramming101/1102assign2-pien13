@@ -1,4 +1,4 @@
-PImage bg, soil, life, groundhog, soldier, cabbage;
+PImage bg, soil, life, groundhogIdle, soldier, cabbage;
 PImage title, startNormal, startHovered;
 PImage gameover, restartNormal, restartHovered;
 int soldierX, soldierY;
@@ -32,7 +32,7 @@ void setup() {
   startNormal = loadImage("img/startNormal.png");
   startHovered = loadImage("img/startHovered.png");
   
-  groundhog = loadImage("img/groundhog.png");
+  groundhogIdle = loadImage("img/groundhogIdle.png");
   groundhogX = 320;
   groundhogY = 80;
   
@@ -96,7 +96,7 @@ void draw(){
   if (rightPressed){
     groundhogX += groundhogSpeed;
   } 
-  image(groundhog, groundhogX, groundhogY);
+  image(groundhogIdle, groundhogX, groundhogY);
   
   //life
   for (int x = 0; x < HP; x++) {
