@@ -1,6 +1,3 @@
-PImage bg, soil, life, groundhogIdle, soldier, cabbage;
-PImage title, startNormal, startHovered;
-PImage gameover, restartNormal, restartHovered;
 int soldierX, soldierY;
 int cabbageX, cabbageY;
 int HP = 2;
@@ -28,7 +25,7 @@ void setup() {
   soil = loadImage("img/soil.png");
   life = loadImage("img/life.png");
   
-  title = loadImage("img/title.jpeg");
+  title = loadImage("img/title.jpg");
   startNormal = loadImage("img/startNormal.png");
   startHovered = loadImage("img/startHovered.png");
   
@@ -43,7 +40,7 @@ void setup() {
   cabbageX = floor(random(0,8))*80;
   cabbageY = floor(random(2,6))*80;  
   
-  gameover = loadImage("img/gameover.jpeg");
+  gameover = loadImage("img/gameover.jpg");
   restartNormal = loadImage("img/restartNormal.png");
   restartHovered = loadImage("img/restartHovered.png");
 }
