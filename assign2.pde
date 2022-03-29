@@ -137,6 +137,7 @@ void draw(){
         image(restartHovered, 248, 360);
         if(mousePressed){
           gameState = GAME_RUN;
+          soldierX = -80;
           soldierY = floor(random(2,6))*80;  
           cabbageX = floor(random(0,8))*80;
           cabbageY = floor(random(2,6))*80;
